@@ -1,0 +1,10 @@
+{
+  "install": "test -f go.mod || go mod init single-dev-env; go build -trimpath -o /dev/null .",
+  "terminals": [
+    {
+      "name": "http-server",
+      "command": "make run",
+      "description": "Go HTTP server on port 8080"
+    }
+  ]
+}
